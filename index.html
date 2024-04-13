@@ -11,26 +11,30 @@
 <body>
 
     <header class="header">
-        <nav class="menu">
-            <button id="home"><a href="index.html">Principal</a></button>
-            <button id="contato"><a href="contato.html">Contato</a></button>
-        </nav>
         <p>Treinando</p>
     </header>
+    <nav class="menu">
+        <button id="home"><a href="index.html">Principal</a></button>
+        <button id="contato"><a href="contato.html">Contato</a></button>
+    </nav>
     <main class="main">
-        <section class="somaValores">
-            <input id="valorUm" type="text" placeholder="Digite um número">
-            <input id="valorDois" type="text" placeholder="Digite um número">
-            <button id="buttonSoma" type="submit">Somar</button>
+        <section class="calculadora">
+            <div class="somaValores">
+                <input id="valorUm" type="text" placeholder="Digite um número">
+                <input id="valorDois" type="text" placeholder="Digite um número">
+                <button id="buttonSoma" type="submit">Somar</button>
+            </div>
             <div class="divResult">
                 <label id="labelResultado" for="valorResultado">Resultado:</label>                
                 <input id="valorResultado" type="text" placeholder="0">
             </div>
         </section>
-        <section class="consultaPokemon">
-            <input id="idPokemon" type="text" placeholder="ID Pokemon">
-            <button id="buttonBuscarPokemon" type="submit">Buscar</button>
-            <div>
+        <section class="pokedex">
+            <div class="consultaPokemon">
+                <input id="idPokemon" type="text" placeholder="ID Pokemon">
+                <button id="buttonBuscarPokemon" type="submit">Buscar</button>    
+            </div>
+            <div class="pokemon">
                 <label id="labelNome" for="nome">Nome:</label>
                 <input id="nome" type="text">
                 <img id="imgPokemon">

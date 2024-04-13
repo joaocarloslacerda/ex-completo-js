@@ -9,27 +9,92 @@ body{
     height: 100vh;
     box-sizing: border-box;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.8fr 0.2fr;
-
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
     grid-template-areas: 
-        "header"
-        "main"
-        "footer"
+        "menu header"
+        "main main"
+        "footer footer"
     ;
-
     padding: 5px;
-    gap: 5px;
+    gap: 5px;    
 }
 .header{
+    display: flex;
     background-color: #D2E4E1;
     grid-area: header;
+    justify-content: center;
+    align-items: center;
+}
+.header > p{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    display: flex;
+    background-color: #D2E4E1;
+    grid-area: menu;
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+#home, #contato{
+    flex-grow: 1;
+    background-color: #669999;
+    border:#669999;
+    border-radius: 5px;
+    color: white;
+
 }
 .main{
     background-color: #D2E4E1;
     grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    /* padding-left: 300px;
+    padding-right: 300px; */
+}
+.calculadora{
+    background-color: #E3E8ED;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 15px;
+    padding: 10px;
+}
+.somaValores{
+    border: black 5px solid;
+    display: flex;
+    flex-direction: column;
+}
+.divResult{
+    background-color: #CED8E0;
+    border: #788896 2px solid;
+    display: flex;
+    flex-direction: column;
+}
+.pokedex{
+    background-color: #E3E8ED;
+    display: flex;
+    flex-direction: row;    
+    flex-grow: 1;
+    gap: 15px;
+    padding: 10px;
 }
 .footer{
     background-color: #D2E4E1;
     grid-area: footer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
