@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FCE6A8;
+    display: grid;
+    height: 100vh;
+    box-sizing: border-box;
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
+    grid-template-areas: 
+        "menu header"
+        "aside main"
+        "asideDois footer"
+    ;
+    padding: 5px;
+    gap: 5px;  
+}
+.header{
+    display: flex;
+    background-color: #D2E4E1;
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+}
+.header > p{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    display: flex;
+    background-color: #D2E4E1;
+    grid-area: menu;
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+#home, #contato{
+    flex-grow: 1;
+    background-color: #788896;
+    border:#788896;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.aside{
+    background-color: #D2E4E1;
+    grid-area: aside;
+}
+.main{
+    background-color: #D2E4E1;
+    grid-area: main;
+}
+.asideDois{
+    background-color: #D2E4E1;
+    grid-area: asideDois;
+}
+.footer{
+    background-color: #D2E4E1;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
