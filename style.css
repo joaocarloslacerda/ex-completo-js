@@ -43,8 +43,8 @@ body{
 }
 #home, #contato{
     flex-grow: 1;
-    background-color: #669999;
-    border:#669999;
+    background-color: #788896;
+    border:#788896;
     border-radius: 5px;
     color: white;
 
@@ -57,35 +57,103 @@ body{
     gap: 10px;
     padding: 10px;
     justify-content: center;
-    /* padding-left: 300px;
-    padding-right: 300px; */
+    padding-left: 300px;
+    padding-right: 300px;
 }
 .calculadora{
     background-color: #E3E8ED;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    gap: 15px;
-    padding: 10px;
+    gap: 30px;
+    padding: 15px;
 }
-.somaValores{
-    border: black 5px solid;
+.calculadora > .somaValores{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
 }
-.divResult{
+.calculadora > .somaValores > #valorUm, #valorDois{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 20px; */
+    padding: 10px;
+    border: #CED8E0 2px solid;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+.calculadora > .somaValores > #valorUm::placeholder, #valorDois::placeholder{
+    color: #CED8E0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 20px; */
+}
+.calculadora > .somaValores > #buttonSoma{
+    background-color: #788896;
+    border: #788896;
+    border-radius: 5px;
+    color: white;
+    flex-grow: 1;
+    padding: 10px;
+    /* font-size: 20px; */
+}
+.calculadora > .divResult{
     background-color: #CED8E0;
     border: #788896 2px solid;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
+.calculadora > .divResult > #valorResultado{
+    font-size: 50px;
+    text-align: center;
+} 
 .pokedex{
     background-color: #E3E8ED;
     display: flex;
     flex-direction: row;    
     flex-grow: 1;
     gap: 15px;
-    padding: 10px;
+    padding: 15px;
+}
+.pokedex > .consultaPokemon{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pokedex > .consultaPokemon > #idPokemon{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    /* border: #CED8E0 2px solid; */
+    /* border-radius: 5px; */
+    flex-grow: 1;
+}
+.pokedex > .consultaPokemon > #buttonBuscarPokemon{
+    flex-grow: 1;
+}
+.pokedex > .pokemon{
+    display: flex;
+    background-color: #CED8E0;
+    border: #788896 2px solid;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+    gap: 10px;
+}
+.pokedex > .pokemon > #descricaoPokemon{
+    display: flex;
+    flex-grow: 1;
+}
+.pokedex > .pokemon > #imgPokemon{
+    display: flex;
+    flex-grow: 4;
+    height: 20vh;
 }
 .footer{
     background-color: #D2E4E1;
