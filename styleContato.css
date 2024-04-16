@@ -70,7 +70,7 @@ body{
 }
 .aside > .redesSociais > #linkedin, #github{
     background-color: #788896;
-    padding: 10px;
+    padding: 8px;
     padding-left: 60px;
     padding-right: 60px;
     color: white;
@@ -79,10 +79,77 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
 }
-
 .main{
     background-color: #D2E4E1;
     grid-area: main;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.main > .contato{
+    background-color: #E3E8ED;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.7fr 0.1fr;
+    grid-template-areas: 
+        "nome sobrenome"
+        "email email"
+        "mensagem mensagem"
+        "buttonEnviar buttonEnviar"
+    ;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 10px;
+    /* justify-content: center; */
+}
+.main > .contato > #nome{
+    grid-area: nome;
+    border: #CED8E0 2px solid;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+}
+.main > .contato > #sobrenome{
+    grid-area: sobrenome;
+    border: #CED8E0 2px solid;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+}
+.main > .contato > #email{
+    grid-area: email;
+    border: #CED8E0 2px solid;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+}
+.main > .contato > #mensagem{
+    grid-area: mensagem;
+    border: #CED8E0 2px solid;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+}
+.main > .contato > #nome::placeholder, 
+#sobrenome::placeholder,
+#email::placeholder,
+#mensagem::placeholder{
+    color: #CED8E0;
+}
+.main > .contato > #buttonEnviar{
+    grid-area: buttonEnviar;
+    background-color: #788896;
+    border: #788896;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 10px;
 }
 .asideDois{
     background-color: #D2E4E1;

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="soma.js"></script>
+    <script type="text/javascript" src="requisicoes.js"></script>
 
     <title>CompletoJS</title>
 
@@ -22,7 +25,7 @@
             <div class="somaValores">
                 <input id="valorUm" type="text" placeholder="Digite um número">
                 <input id="valorDois" type="text" placeholder="Digite um número">
-                <button id="buttonSoma" type="submit">Somar</button>
+                <button id="buttonSoma" type="submit" onclick="calculadora()">Somar</button>
             </div>
             <div class="divResult">
                 <label id="labelResultado">Resultado:</label>                
@@ -32,7 +35,7 @@
         <section class="pokedex">
             <div class="consultaPokemon">
                 <input id="idPokemon" type="text" placeholder="ID Pokemon">
-                <button id="buttonBuscarPokemon" type="submit">Buscar</button>    
+                <button id="buttonBuscarPokemon" type="submit" onclick="pokedex()">Buscar</button>    
             </div>
             <div class="pokemon">
                 <div class="descricaoPokemon">
