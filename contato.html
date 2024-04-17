@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleContato.css">
+    <script type="text/javascript" src="contato.js"></script>
+    <script type="text/javascript" src="requisicoes.js"></script>
 
     <title>Contato</title>
 </head>
@@ -29,7 +31,7 @@
             <input id="sobrenome" type="text" placeholder="Sobrenome">
             <input id="email" type="text" placeholder="E-mail">
             <textarea id="mensagem" type="text" placeholder="Mensagem" rows="14"></textarea>
-            <button id="buttonEnviar" type="submit">Enviar</button>
+            <button id="buttonEnviar" type="submit" onclick="requestPost()">Enviar</button>
         </section>
     </main>
     <aside class="asideDois">
