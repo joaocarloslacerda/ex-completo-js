@@ -13,9 +13,7 @@ async function enviarMensagem(){
         email: email,
         mensagem: mensagem
     }
-    
     const response = await requestPost(url, body)
-    console.log(response)
 
     validaEnvio(response)
 }
