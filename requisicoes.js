@@ -8,16 +8,7 @@ async function requestGet(endpoint, id){
     return responseJson
 }
 
-async function requestPost(){
-
-    const body = {
-        nome: 'joao',
-        sobrenome: 'lacerda',
-        email: 'joaoalacerda@gmail.com',
-        mensagem: 'testando o formulário'
-    }
-
-    const url = "https://api-aula.up.railway.app/generica"
+async function requestPost(url, body){
 
     const returnFetch = await fetch(url, {
         method: "POST",
@@ -25,6 +16,5 @@ async function requestPost(){
         headers: {"Content-type": "application/json"}
     })
 
-    const fetchJson = returnFetch.json()
-    console.log(fetchJson)
+    return returnFetch
 }
