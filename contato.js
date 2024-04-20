@@ -23,11 +23,13 @@ function validaEnvio(response){
     const campoRetornoEnvio = document.getElementById("retornoEnvio")
 
     if(response.status == 200 || response.status == 201 || response.status == 204){
-        campoRetornoEnvio.style.backgroundColor = "green"
+        campoRetornoEnvio.style.display = "block"
+        campoRetornoEnvio.style.backgroundColor = "#006400"
         campoRetornoEnvio.innerText = "Enviado com sucesso!"
     }
     else{
-        campoRetornoEnvio.style.backgroundColor = "red"
+        campoRetornoEnvio.style.display = "block"
+        campoRetornoEnvio.style.backgroundColor = "#8B0000"
         campoRetornoEnvio.innerText = "Erro no envio!"
     }
 }
