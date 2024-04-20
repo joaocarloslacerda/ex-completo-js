@@ -5,7 +5,7 @@ function calculadora(){
 
     const resultado = somaValores(valorUm, valorDois)
 
-    const campoResultado = document.getElementById("valorResultado")
+    const campoResultado = document.getElementById("valor")
     campoResultado.innerText = resultado
 }
 

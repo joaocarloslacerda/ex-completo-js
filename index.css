@@ -85,6 +85,12 @@ body{
     border-radius: 5px;
     padding: 10px;
 }
+.card > .colunaButton > #valorUm, #valorDois, #idPokemon{
+    text-align: center;
+}
+.card > .colunaButton > #valorUm::placeholder, #valorDois::placeholder, #idPokemon::placeholder{
+    text-align: left;
+}
 .card > .colunaButton > #valorUm::placeholder, #valorDois::placeholder, #buttonSoma::placeholder, 
 #idPokemon::placeholder, #buttonBuscarPokemon::placeholder{
     color: #E3E8ED;
@@ -106,15 +112,31 @@ body{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.card > .colunaResult > .valorResultado > label{
+.card > .colunaResult > .divResultado > #valor{
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     padding-top: 20px;
 }
-#imgPokemon{
-    border: red 2px solid;
+.card > .colunaResult > .pokedex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.card > .colunaResult > .pokedex> .descricaoPokemon{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: auto;
+}
+.card > .colunaResult >  .pokedex> .descricaoPokemon > #nome{
+    text-transform: capitalize;
+}
+.card > .colunaResult > .pokedex> #imgPokemon{
+    max-width: 100px;
+    max-height: 100px;
 }
 .footer{
     background-color: #D2E4E1;
