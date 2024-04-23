@@ -1,0 +1,48 @@
+@media (max-width: 640px){
+    body{
+        background-color: #FCE6A8;
+        display: flex;
+        height: 100vh;
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 5px;
+        gap: 5px;    
+    }
+    .header{
+        margin: 0;
+        padding: 0;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .menu{
+        margin: 0;
+        padding: 0;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .main{
+        margin: 0;
+        padding: 0;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .footer{
+        margin: 0;
+        padding: 0;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .card{
+        flex-direction: column;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .card > .colunaButton{
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .card > .colunaButton{
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
