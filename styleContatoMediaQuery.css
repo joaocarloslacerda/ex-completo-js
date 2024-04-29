@@ -1,0 +1,54 @@
+@media (max-width: 640px){
+    body{
+        box-sizing: border-box;
+        background-color: #FCE6A8;
+        display: flex;
+        height: 100vh;
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 5px;
+        gap: 5px;    
+    }
+    .header{
+        padding: 20px;
+    }
+    .menu{
+        padding: 15px;
+        justify-content: center;
+    }
+    .menu > #home, #contato{
+        max-width: 80px;
+        padding: 10px;
+    }
+    .aside{
+        padding: 30px;
+    }
+    .aside > .redesSociais{
+        display: flex;
+        flex-direction: row;
+    }
+    .aside > .redesSociais > #linkedin, #github{
+        max-width: 100px;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .main{
+        height: 100%;
+        width: 100%;
+        max-height: 470px;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .main > .contato{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .main > .contato > #mensagem{
+        max-height: 180px;
+    }
+    .footer{
+        padding: 15px;
+    }
+}
